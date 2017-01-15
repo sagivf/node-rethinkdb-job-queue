@@ -28,7 +28,7 @@ module.exports.job = function jobParseJob (job) {
   let validJobs = []
   for (let j of jobs) {
     let detail = false
-    if (!is.uuid(j.id)) { detail = 'Job id: ' + j.id }
+    //if (!is.uuid(j.id)) { detail = 'Job id: ' + j.id }
     if (!j.q) { detail = 'Job q missing' }
     if (!j.priority) { detail = 'Job priority missing' }
     if (j.timeout < 0) { detail = 'Job timeout: ' + j.timeout }
